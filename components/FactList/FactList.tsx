@@ -12,7 +12,7 @@ const FactList: FC<FactListProps> = ({ buttonLabel, locale }) => {
 
 	function handleClick() {
 		startTransition(async () => {
-			setFact(await loadFact(locale));
+			setFact(await loadFact());
 		});
 	}
 
